@@ -26,7 +26,7 @@ namespace dotnet_rpg.Controllers
         [HttpGet("GetAll")]
         public IActionResult Get()
         {
-            return Ok(_characterService.GetAllCharacters()); 
+            return Ok(_characterService.GetAllCharacters());
         }
         [HttpGet("{id}")]
         public IActionResult GetSingle(int id)
